@@ -7,22 +7,21 @@ function ProductosContainerFirebase({}){
     const [cargando, setCargando] = useState(true);
     const [error, setError] = useState(null);
 
-    {useEffect(() => {
-        fetch('https://68100d8b27f2fdac24101ef5.mockapi.io/productos')
-            .then((respuesta) =>
-                respuesta.json()
-            )
-            .then((datos) => {
-                console.log(datos)
-                setProductos(datos)
-                setCargando(false);
-            })
-            .catch((error) => {
-                console.log("Error", error)
-                setError('Hubo un problema al cargar los productos.');
-                setCargando(false);
-            });
-    }, []);}
+    useEffect(() => {
+  fetch('https://68324defc3f2222a8cb1f84f.mockapi.io/productos')
+    .then((respuesta) => respuesta.json())
+    .then((datos) => {
+      console.log(datos);
+      setProductos(datos);
+      setCargando(false);
+    })
+    .catch((error) => {
+      console.log("Error", error);
+      setError('Hubo un problema al cargar los productos.');
+      setCargando(false);
+    });
+}, []);
+
 
     if (cargando) {
         return <p>Cargando productos...</p>;
