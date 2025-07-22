@@ -33,7 +33,7 @@ function CardProducto({ producto }) {
       <Card.Body>
         <Card.Title>{producto.nombre}</Card.Title>
         <Card.Text>
-          <strong>Precio:</strong> ${producto.precio}
+          <strong>Precio:</strong> ${producto.price}
         </Card.Text>
         <Card.Text style={{ fontSize: "0.9em", color: "#555" }}>
           {producto.descripcion}
