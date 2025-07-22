@@ -21,24 +21,27 @@ function CarruselBootstrap() {
     if (primerosTres.length === 0) return <p>No hay productos para mostrar.</p>;
 
     return (
-        <Container className="my-4">
-            <Carousel>
-                {primerosTres.map((producto) => (
+        <Container className="my-4 d-flex justify-content-center">
+    <div style={{ width: "100%", maxWidth: "900px" }}>
+        <Carousel>
+            {primerosTres.map((producto) => (
                 <Carousel.Item key={producto.id}>
                     <img
-                    className="d-block w-100"
-                    src={producto.imagen}
-                    alt={producto.name}
-                    style={{ height: "400px", objectFit: "cover" }}
+                        className="d-block w-100"
+                        src={producto.imagen}
+                        alt={producto.name}
+                        style={{ height: "400px", objectFit: "contain" }}
                     />
                     <Carousel.Caption>
-                    <h3>{producto.name}</h3>
-                    <p>{producto.description}</p>
+                        <h3>{producto.name}</h3>
+                        <p>{producto.description}</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                ))}
-            </Carousel>
-        </Container>
+            ))}
+        </Carousel>
+    </div>
+</Container>
+
     );
 }
 

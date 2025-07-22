@@ -32,7 +32,7 @@ export function ProductosProvider({ children }) {
         return(
             new Promise(async (res, rej) => {
                 try {
-                    const respuesta = await fetch('https://68100d8b27f2fdac24101ef5.mockapi.io/productos', {
+                    const respuesta = await fetch('https://68324defc3f2222a8cb1f84f.mockapi.io/productos', {
                         method: 'POST',
                         headers: {
                         'Content-Type': 'application/json',
@@ -108,7 +108,7 @@ export function ProductosProvider({ children }) {
             return(
                 new Promise(async (res, rej) => {
                     try {
-                        const respuesta = await fetch(`https://68100d8b27f2fdac24101ef5.mockapi.io/productos${id}`, {
+                        const respuesta = await fetch(`https://68324defc3f2222a8cb1f84f.mockapi.io/productos${id}`, {
                         method: 'DELETE',
                         });
                         if (!respuesta.ok) throw new Error('Error al eliminar');

@@ -9,7 +9,7 @@ function Nav({}) {
     const {productosCarrito} = useContext(CarritoContext)
     const {user, admin} = useAuthContext();
     return ( 
-        <nav style={{ backgroundColor: "#333", color: "white", padding: "10px", width:"100%" }}>
+        <nav style={{ backgroundColor: "#334", color: "white", padding: "10px", width:"100%" }}>
             <ul style={{ listStyle: "none", display: "flex", justifyContent: "space-around", margin: 0 }}>  
                 <li><Link to="/" style={{ color: "white", textDecoration: "none" }}>Inicio</Link></li>  
                 <li><Link to="/productos" style={{ color: "white", textDecoration: "none" }}>Productos</Link></li>   
