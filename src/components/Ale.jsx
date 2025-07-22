@@ -15,7 +15,7 @@ function ProductosContainer1({functionCarrito} ){
     //const [total, setTotal] = useState(0)
 
     {useEffect(() =>{
-        fetch('https://68100dc827f2fdac24102255.mockapi.io/productos')
+        fetch('https://68324defc3f2222a8cb1f84f.mockapi.io/productos')
         .then((res) => res.json())
             .then((datos) => {
                 console.log(datos)

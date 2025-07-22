@@ -1,19 +1,25 @@
-function About() {
-    
-    return (
-      <section style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
-        <h2>Sobre Nosotros</h2>
+import { Container } from "react-bootstrap";
+
+function Nosotros() {
+  return (
+    <Container className="d-flex justify-content-center my-5">
+      <div
+        className="p-4 rounded shadow text-center"
+        style={{ maxWidth: "600px", backgroundColor: "#a9e8fbff", fontFamily: "Segoe UI" }}
+      >
+        <h2 className="mb-3">Sobre Nosotros</h2>
         <p>
-          Bienvenido a nuestra tienda online. Nos especializamos en ofrecer
-          productos de alta calidad a precios accesibles. Nuestro objetivo es
-          brindarte una experiencia de compra simple, rápida y segura.
+          Bienvenidos a nuestra librería online:  
         </p>
         <p>
-          Ya sea que estés buscando tecnología, ropa, accesorios o más, en
-          nuestro e-commerce vas a encontrar lo que necesitás.
+          Ofrecemos materiales  útiles coloridos y cuadernos que inspiran a aprender. ¡Nos encanta pensar que cada compra es un paso más hacia un gran futuro!
         </p>
-      </section>
-    );
-  }
-  
-export default About;
+        <p>
+          Gracias por elegirnos . 
+        </p>
+      </div>
+    </Container>
+  );
+}
+
+export default Nosotros;
